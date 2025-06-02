@@ -1,0 +1,42 @@
+Network Traffic Capture Report
+
+Task: Capture and Analyze Network Traffic using Wireshark  
+Tool Used:Wireshark (on Kali Linux)  
+Capture File:`8deadd62-d30e-4cfd-bf3a-522d4d99f4ad.pcapng`  
+Duration: ~1 minute  
+Date: June 2025
+
+---
+
+## Summary of Identified Protocols
+
+### DNS (Domain Name System)
+- Purpose: Resolves domain names to IP addresses.
+- Example Packet: `Standard query 0x0000 A youtube.com`
+
+### HTTP (HyperText Transfer Protocol)
+- Purpose: Communication between web browser and server.
+- Example Packet: `GET / HTTP/1.1 Host: youtube.com`
+
+### ICMP (Internet Control Message Protocol)
+- Purpose: Used for ping (connectivity testing).
+- Example Packet: `Echo (ping) request id=0x0010, seq=1`
+
+### TCP (Transmission Control Protocol)
+- Purpose: Transport layer protocol for reliable communication.
+- Example Packet: `SYN → ACK packets initiating connection`
+
+---
+
+## Notes
+- Captured while visiting "youtube.com and running" `ping` command
+- Exported and saved as `.pcapng` using Wireshark
+- Filters used: `dns`, `http`, `icmp`, `tcp`
+
+---
+
+## Tools and Commands Used bash
+SUDO APT INSTALL WIRESHARK -Y
+WIRESHARK &
+PING -C 4 YOUTUBE.COM
+
