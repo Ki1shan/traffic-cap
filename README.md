@@ -18,8 +18,8 @@
 ---
 
 ## Tools Used
-- **Wireshark** for packet capturing
-- **Linux CLI (Kali)** to generate traffic using `ping` and web browsing
+- Wireshark for packet capturing
+- Linux CLI (Kali) to generate traffic using `ping` and web browsing
 
 ---
 
@@ -37,5 +37,4 @@
 ## How to Use
 1. Open `8deadd62-d30e-4cfd-bf3a-522d4d99f4ad.pcapng` in Wireshark  
 2. Use filters like `dns`, `http`, `icmp`, `tcp` to analyze specific traffic  
-3. Refer to `report.md` for example packets and analysis  
 
